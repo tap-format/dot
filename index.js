@@ -9,16 +9,16 @@ var exports = module.exports = function (input$) {
 
   return Rx.Observable
     .merge(
-      tapFormatDot(input$),
+      formatTestsAndAssertions(input$),
       formatFailures(input$),
       formatResults(input$),
       exitOnFailure(input$)
     )
 }
 
-exports.format = tapFormatDot
+exports.format = formatTestsAndAssertions
 
-function tapFormatDot (input$) {
+function formatTestsAndAssertions (input$) {
 
   var output$ = new Rx.Subject()
 
