@@ -5,7 +5,7 @@ var formatFailures = require('@untap/failures')
 var formatResults = require('@untap/results')
 var exitOnFailure = require('@untap/exit')
 
-module.exports = function (input$) {
+var exports = module.exports = function (input$) {
 
   return Rx.Observable
     .merge(
@@ -15,6 +15,8 @@ module.exports = function (input$) {
       exitOnFailure(input$)
     )
 }
+
+exports.format = tapFormatDot
 
 function tapFormatDot (input$) {
 
