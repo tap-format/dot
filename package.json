@@ -1,5 +1,5 @@
 {
-  "name": "@untap/dot",
+  "name": "@tap-format/dot",
   "version": "0.1.0",
   "description": "Formatted tests as a dot reporter for TAP output",
   "main": "index.js",
@@ -7,14 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "untap-dot": "bin/cmd.js"
+    "tap-format-dot": "bin/cmd.js",
+    "tf-dot": "bin/cmd.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/untap/dot.git"
+    "url": "git+https://github.com/tap-format/dot.git"
   },
   "keywords": [
-    "untap",
+    "tap-format",
     "tap",
     "format",
     "parse",
@@ -23,14 +24,14 @@
   "author": "Scott Corgan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/untap/dot/issues"
+    "url": "https://github.com/tap-format/dot/issues"
   },
-  "homepage": "https://github.com/untap/dot#readme",
+  "homepage": "https://github.com/tap-format/dot#readme",
   "dependencies": {
-    "@untap/exit": "^0.1.0",
-    "@untap/failures": "^0.1.0",
-    "@untap/parser": "^0.1.0",
-    "@untap/results": "^0.1.0",
+    "@tap-format/exit": "0.2.0",
+    "@tap-format/failures": "0.2.0",
+    "@tap-format/parser": "0.2.0",
+    "@tap-format/results": "0.2.0",
     "chalk": "^1.1.1",
     "figures": "^1.4.0",
     "rx": "^4.0.7"

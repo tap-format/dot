@@ -1,9 +1,9 @@
 var Rx = require('rx')
 var format = require('chalk')
 var figures = require('figures')
-var formatFailures = require('@untap/failures')
-var formatResults = require('@untap/results')
-var exitOnFailure = require('@untap/exit')
+var formatFailures = require('@tap-format/failures')
+var formatResults = require('@tap-format/results')
+var exitOnFailure = require('@tap-format/exit')
 
 var exports = module.exports = function (input$) {
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var parser = require('@untap/parser')
+var parser = require('@tap-format/parser')
 var formatAsDot = require('../')
 
 var input$ = parser.observeStream(process.stdin)
