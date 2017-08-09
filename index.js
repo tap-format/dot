@@ -42,6 +42,12 @@ function formatTestsAndAssertions (input$) {
       process.stdout.write('\n\n')
     })
 
+    input$.comments$
+      .forEach(function (comment) {
+
+        process.stdout.write(format.yellow(comment.title))
+      })
+
   return output$
 }
 
